@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDpV1rzzAI0y1pu6oTgvVKTpGK3_6nFB_U",
+          authDomain: "onlinewebmoile.firebaseapp.com",
+          databaseURL: "https://onlinewebmoile.firebaseio.com",
+          projectId: "onlinewebmoile",
+          storageBucket: "onlinewebmoile.appspot.com",
+          messagingSenderId: "345909641748",
+          appId: "1:345909641748:web:650b28a0e175bbbb9b5d01",
+          measurementId: "G-H455X61BV7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+      </script>
+</head>
+<body>
+
+
+<div class="form">
+<input type="email" id ="email" placeholder="email">
+<br>
+<input type="password" id ="password" placeholder="password">
+<br>
+<button onclick="signup()">Singup</button>
+</div>
+
+<br><br><br><br>
+<div class="form">
+  <input type="email" id ="login-email" placeholder="email">
+  <br>
+  <input type="password" id ="login-password" placeholder="password">
+  <br>
+  <button onclick="login()">login</button>
+  </div>
+  
+
+</body>
+<script src="app.js"></script>
+</html>
